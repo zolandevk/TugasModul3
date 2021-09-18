@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Home from "./facemask/Home";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <div style={{ marginTop: "5px", marginBottom: "35px", marginLeft: "50px", marginRight: "50px", background: "rgba(255, 255, 255)" }}>                     
+        <h1>FACE MASK AND SCRUB </h1>         
+        <Home />
+        </div>
+        </div>
+    )
+  }
 }
 
 export default App;
